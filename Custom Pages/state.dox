@@ -1,0 +1,54 @@
+/*!
+ \page State State Design Pattern
+  
+<summary>This pattern is needed to manage upload process
+</summary>
+ <h2 style="color:Aqua"> Pattern Benefits for Project </h2>
+
+ Using the pattern
+make it flexible to add additional tasks to do during upload process
+
+<h2 style="color:Aqua;"> Description Of Usage In Project </h2>
+ <div style="border:2px solid aqua; font-size:16px;">
+In the project class UploadManagement.UploadManager manages the upload process has Execute method that runs the state machine
+and SetState method that defines the transition function between state.
+  class UploadManagement.UploadState is the base of all classes that represent state.
+  There are also classes that represent states:
+  <list type="number">
+  <item>
+  class UploadManagement.InitialState-Initial state of system, that stores all files for upload in temporary directory
+  </item>
+  <item>
+    class UploadManagement.ValidationState- Checks that uploaded files are in acceptable format. So this files can represent database object.
+  </item>
+  <item>
+    class UploadManagement.MoveToConstState- Deletes all files from target directory where uploaded files need to be copied
+  </item>
+    <item>
+    class UploadManagement.CreateDiagram- Creates objects in memory that will represent database objects that are described in uploaded
+	files in memory in order to be able to bind them to diagram.
+  </item>
+<item>
+    class UploadManagement.FinishState- Identifies that upload work finished
+  </item>
+ </list>
+ 
+
+ 
+ </div>
+ 
+  
+<h2> Diagram </h2>
+
+\image html ClassDiagram1.png
+ 
+ \section stateother Other Patterns in Project
+ \ref Singleton \n
+ \ref Builder \n
+ \ref Template \n
+ \ref Facade \n
+ \ref  Command \n
+ \ref Visitor \n
+  \ref Strategy \n
+ 
+*/

@@ -1,0 +1,10 @@
+/*!
+ 
+  \defgroup Dal Data Access Layer
+  @{
+<summary>This layer is responsible for connecting to xml files that contain database definitions and to executing IO operations on them.
+ 
+</summary>
+
+	@}
+*/

@@ -1,0 +1,59 @@
+/*!
+ \page Builder Builder Design Pattern
+  
+<summary>This pattern is needed to create complex objects with different representations \n
+and in this project is used for creating c# classes of different structure. 
+</summary>
+ <h2 style="color:Aqua"> Pattern Benefits for Project </h2>
+
+ Using the pattern
+helps to add new class to system, you only need to create class that extends Builder, class that extends
+CreatedType class or one of its descendants, and class that extends module.
+<h2 style="color:Aqua;"> Description Of Usage In Project </h2>
+ <div style="border:2px solid aqua; font-size:16px;">
+In the project generic class ClassGenerator.TypeBuilder serves as abstract Builder with generic parameter that identifies \n
+what c# type to generate.This class has two direct descendants ClassGenerator.ClassBuilder and ClassGenerator.InterfaceBuilder for \n
+ generating classes and interfaces accordingly. Also there is generic class ClassGenerator.TypeCreatorManager \n
+ which manages generation of chosen c# type. \n
+ 
+This class has two direct descendants ClassGenerator.InterfaceCreatorManager and ClassCreatorManager for generating classes \n
+and interfaces accordingly.Now we get to class that represents generated type it's name is ClassGenerator.CreatedType \n
+ that also has methods that help to generate c# type more comfortably. \n
+Also this class is type of generic parameter in the two classes described before. \n
+Moreover, this class has two descendants ClassGenerator.CreatedClass for representing c# classes \n
+and ClassGenerator.CreatedInterface for representing c# interfaces. \n
+ Finally, the idea is that each class or interface has Builder class 
+ that extends ClassGenerator.ClassBuilder or ClassGenerator.InterfaceBuilder and Class class that extends ClassGenerator.CreatedClass or ClassGenerator.CreatedInterface. \n
+ 
+ </div>
+ <h2> All Pattern Members </h2>
+  <list type="number">
+    <item>Class that acts as abstract builder - ClassGenerator.TypeBuilder </item>
+	<item>Classes that act as concrete builder - ClassGenerator.ClassBuilder, ClassGenerator.InterfaceBuilder, ClassGenerator.ChangeManagerBuilder, ClassGenerator.PropertyBuilder, ClassGenerator.ConnectionPropertyBuilder\n
+                                                 ClassGenerator.TableBuilder, ClassGenerator.TableListBuilder, ClassGenerator.SaveBuilder, ClassGenerator.DbManagerBuilder, ClassGenerator.IRecordBuilder, ClassGenerator.IElementBuilder\n
+												 ClassGenerator.IChangeVisitorBuilder, ClassGenerator.ITableBuilder
+												 
+	</item>
+	<item>Classes that act as Director - ClassGenerator.TypeCreatorManager, ClassGenerator.InterfaceCreatorManager, ClassGenerator.ClassCreatorManager
+												 
+	</item>
+	<item>Classes that act as Product - ClassGenerator.ChangeManagerClass, ClassGenerator.PropertyClass, ClassGenerator.ConnectionPropertyClass\n
+                                                 ClassGenerator.TableClass, ClassGenerator.TableListClass, ClassGenerator.SaveClass, ClassGenerator.DbManagerClass, ClassGenerator.IRecordInterface, ClassGenerator.IElementInterface\n
+												 ClassGenerator.IChangeVisitorInterface, ClassGenerator.ITableInterface
+												 
+	</item> 
+  
+<h2> Diagram </h2>
+Here are shown only the base classes that serve role in pattern. This done because there are 30 classes that 
+are members. All the others simply extend one of this classes.
+\image html BuilderDiagram.jpg
+ 
+ \section builderother Other Patterns in Project
+ \ref Singleton \n
+ \ref Facade \n
+ \ref Command \n
+ \ref  Template  \n
+ \ref Visitor \n
+ \ref Strategy \n
+ 
+*/

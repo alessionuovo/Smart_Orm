@@ -1,0 +1,30 @@
+/*!
+ 
+  \defgroup Bll Business Logic Layer
+  @{
+<summary>This layer is responsible for connecting between Data Access layer and Presentation Layer.
+  In this particular project it manages  file upload, file validation, diagram creation, class generation tasks
+  and some others.
+</summary>
+ \section Principles
+ <list type="bullet">
+   <item>
+     Encapusulation principle in logic layer reflected by hiding class data and revealing it only by properties.
+   </item>
+   <item>
+    Srp principle reflected in that all the classes in the logic layer have single defined responsibility.
+   </item>
+    <item>
+    Lsp  principle reflected in that all the classes in the logic layer have single defined responsibility.
+   </item>
+     <item>
+    Open closed  principle reflected in that the business logic layers are closed to modification
+	and open to extension, and the project is highly flexible to extension.
+   </item>
+    <item>
+    Using design pattern in this level gives this project to high level of flexibility.
+   </item>
+ </list>
+ Now you can proceed to the \page pl 
+	@}
+*/

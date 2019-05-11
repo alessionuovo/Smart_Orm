@@ -1,0 +1,6 @@
+<Table Name="First">
+	<Properties>
+		<Property Name="a" Type="int"/>
+		<Property Name="b" Type="string"/>
+	</Properties>
+</Table>

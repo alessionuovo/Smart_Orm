@@ -1,0 +1,35 @@
+/*!
+   \page Additional_Changes Project Extensions
+   The system is built from 7 modules and each of them is extendable 
+   via extending/implementing up to 5-7 c# types, but for some
+     some changes you need to extend several modules.
+   Now we will see how to extend some of the modules in the system.
+   <list type="number">
+    <item><description>File Upload Module(UploadManagement namespace)- To extend this module, 
+	you simple extend the implementation of State design pattern here.
+	So in other words you need to extend UploadManagement.UploadManager class
+	 and override SetState method, also you may override Execute although its logic is perfect,  moreover you need to add one or more classes that extend UploadManagement.UploadState and implement execute method, that does additional job that you want.
+	
+	 </description></item>
+     <item><description>Class Generator Module(ClassGenerator namespace)- To extend this module, 
+	 
+	 So in other words you need to implement ClassGenerator.IModuleBuilder interface,
+	 also extend ClassGenerator.TypeBuilder / ClassGenerator.InterfaceBuilder / ClassGenerator.ClassBuilder(depends on what you are generating new type(struct for example) or interface or class), 
+	 moreover you need to extend ClassGenerator.CreatedType / ClassGenerator.CreatedClass / ClassGenerator.CreatedInterface and finally you extend ClassGenerator.CodeCreator that manages the c# type generation.
+	</description></item>
+	<item><description>Diagram Module (DiagramContent namespace)- This module contains set of classes that are bound to diagram control.
+	You can extend DiagramContent.Table(represents database table), DiagramContent.Connection(represents relationship), 
+	DiagramContent.Properties(represents table property), DiagramContent.Model(represents the whole model). Of course if you extend
+	DiagramContent.Properties you have to extend DiagramContent.Table and DiagramContent.Model.
+	</description></item>
+	<item><description>File Management Module (FileManagement namespace)- This module manages IO operations for files that represent db.
+	
+	The common extension is of FileManagement.FileManager to add support to other formats but then you also need to implement 
+	FileManager.IEntity, FileManagement.IEntityManager and extend FileManagement.DbDefinitionsManager.
+	</description></item>
+	<item><description>Utilities (Utilities.Definitions namespace)- This module manages system definitions.
+	To extend this module you need to extend here a Facade design pattern.
+	So in other words you need only to extend Utilities.Definitions.SystemDefinitionsManager class
+	in addition to class that add functionality.
+	</description></item>
+*/

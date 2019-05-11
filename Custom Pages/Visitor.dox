@@ -1,0 +1,39 @@
+/*!
+ \page Visitor Visitor Design Pattern
+  
+<summary>This pattern is needed to represent operation that wiil be made on project structure
+and in this project is used in generated c# classes to load data from files to memory and vice versa.
+</summary>
+ <h2 style="color:Aqua"> Pattern Benefits for Project </h2>
+
+ Using the pattern
+make it flexible to add another operation on Collection and also 
+semantically load and save operations should not be in collection class itself.
+
+<h2 style="color:Aqua;"> Description Of Usage In Project </h2>
+ <div style="border:2px solid aqua; font-size:16px;">
+In the project interface GeneratedDb.IChangeVisitor is generic class where generic type is one table classes and serves as Visitor providing methods SaveData and LoadData
+both of which that as parameter get a container in which to load the data or from which to save .
+  class GeneratedDb.FileManager implements this interface and acts as ConcreteVisitor.
+ MoreOver, class GeneratedDb.DbManager- class that manages all the work with generated classes from code and serves as ObjectStructure.
+ Finally, class GeneratedDb.TableList is class that extends generic Collection and serves as ConcreteElement on which operations are defined
+ 
+ 
+
+ 
+ </div>
+ 
+  
+<h2> Diagram </h2>
+
+\image html VisitorDiagram.jpg
+ 
+ \section visitorother Other Patterns in Project
+ \ref Singleton \n
+ \ref Builder \n
+ \ref Facade \n
+ \ref  Command \n
+ \ref Template Method \n
+ \ref Strategy \n
+ 
+*/

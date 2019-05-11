@@ -1,0 +1,12 @@
+/*!
+   \page UploadSequence Upload Sequence
+    \ingroup diagrams
+	@{
+	\brief This diagram shows sequnce of files that participate in upload
+	\detail Some explanation:
+	
+	1. You can see in documentation a much detailed explanation of all.
+	Now the picture:
+	\image html UploadSequence.jpg
+	@}
+*/

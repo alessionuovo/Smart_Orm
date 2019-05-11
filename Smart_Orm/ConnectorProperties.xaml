@@ -1,0 +1,58 @@
+﻿<Window x:Class="Smart_Orm.ConnectorProperties"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Smart_Orm"
+        mc:Ignorable="d"
+        xmlns:wpfext="clr-namespace:WpfExtensions;assembly=WpfExtensions"
+        Title="ConnectorProperties" Height="300" Width="300">
+    <Grid>
+        <StackPanel>
+           
+                        <StackPanel >
+                            <Label Content="Choose First Table"></Label>
+                            <ComboBox x:Name="FirstTable" SelectionChanged="FirstTable_SelectionChanged"  ItemsSource="{Binding model.tables }">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Label Content="{Binding Path=Name}"></Label>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+
+                            </ComboBox>
+                            <Label Content="Choose Second Table"></Label>
+                            <ComboBox x:Name="SecondTable" SelectionChanged="SecondTable_SelectionChanged" ItemsSource="{Binding model.tables }">
+                                <ComboBox.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel>
+                                            <Label Content="{Binding Path=Name}"></Label>
+                                        </StackPanel>
+                                    </DataTemplate>
+                                </ComboBox.ItemTemplate>
+
+                            </ComboBox>
+
+                            <Label Content="Choose First Relation"></Label>
+                            <ComboBox x:Name="FirstRelation" >
+                                <ComboBox.Items>
+                                    <ComboBoxItem>One</ComboBoxItem>
+                                    <ComboBoxItem>Many</ComboBoxItem>
+                                </ComboBox.Items>
+                            </ComboBox>
+                            <Label Content="Choose Second Relation"></Label>
+                            <ComboBox x:Name="SecondRelation" >
+                                <ComboBox.Items>
+                                    <ComboBoxItem>One</ComboBoxItem>
+                                    <ComboBoxItem>Many</ComboBoxItem>
+                                </ComboBox.Items>
+                            </ComboBox>
+                
+            </StackPanel>
+                   
+            <Button x:Name="btnApply" Margin="0,15,0,0" Content="Apply" Click="btnApply_Click"></Button>
+        </StackPanel>
+        
+    </Grid>
+</Window>

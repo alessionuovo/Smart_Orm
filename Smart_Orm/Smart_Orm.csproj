@@ -1,0 +1,353 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6D9EB08D-9918-4917-8323-F03297F6DEF8}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Smart_Orm</RootNamespace>
+    <AssemblyName>Smart_Orm</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <WarningLevel>4</WarningLevel>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <DocumentationFile>bin\Debug\Smart_Orm.XML</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>diagram.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ReachFramework" />
+    <Reference Include="Syncfusion.Diagram.WPF, Version=14.2450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Syncfusion\14.2.0.26\Assemblies\4.5\Syncfusion.Diagram.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Presentation.Base, Version=14.2450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Syncfusion\14.2.0.26\Assemblies\4.5\Syncfusion.Presentation.Base.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Shared.WPF, Version=14.2450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Syncfusion\14.2.0.26\Assemblies\4.5\Syncfusion.Shared.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.Windows, Version=14.2450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Syncfusion\14.2.0.26\Assemblies\4.5\Syncfusion.Tools.Windows.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.Tools.WPF, Version=14.2450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Syncfusion\14.2.0.26\Assemblies\4.5\Syncfusion.Tools.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="Syncfusion.VectorImages.WPF, Version=14.2450.0.26, Culture=neutral, PublicKeyToken=3d67ed1f87d44c89, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\Syncfusion\14.2.0.26\Assemblies\4.5\Syncfusion.VectorImages.WPF.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Printing" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xaml">
+      <RequiredTargetFramework>4.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </ApplicationDefinition>
+    <Compile Include="ObservableCollectionExtension.cs" />
+    <Compile Include="Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Page Include="ConnectorProperties.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiagramResources\ChildWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiagramResources\DiagramStyle.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiagramResources\Path.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DiagramResources\ThemeBrushes.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectorProperties.xaml.cs">
+      <DependentUpon>ConnectorProperties.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramResources\ChildWindow.xaml.cs">
+      <DependentUpon>ChildWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DiagramResources\DiagramProperties.cs" />
+    <Compile Include="DiagramResources\ShapeStyles.cs" />
+    <Compile Include="DiagramResources\TextStyles.cs" />
+    <Page Include="FileChoose.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="MainWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="OpenWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FileChoose.xaml.cs">
+      <DependentUpon>FileChoose.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.xaml.cs">
+      <DependentUpon>MainWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="OpenWindow.xaml.cs">
+      <DependentUpon>OpenWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <AppDesigner Include="Properties\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ClassGenerator\ClassGenerator.csproj">
+      <Project>{8c51e9df-1303-47c9-875d-31b0bc635f9f}</Project>
+      <Name>ClassGenerator</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiagramContent\DiagramContent.csproj">
+      <Project>{dfd699c1-5996-4085-84d5-983eb9bcde1d}</Project>
+      <Name>DiagramContent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DiagrmaManagement\DiagramManagement.csproj">
+      <Project>{38165e6a-1859-4a03-9dc0-63f64a210051}</Project>
+      <Name>DiagramManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FileManagement\FileManagement.csproj">
+      <Project>{fec05c05-1518-45a3-803a-4bf82073caab}</Project>
+      <Name>FileManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Syncfusion.Diagram.Extensions\Syncfusion.Diagram.Extensions.csproj">
+      <Project>{3d2a089d-228c-4c36-b2e9-a9e36325a1d5}</Project>
+      <Name>Syncfusion.Diagram.Extensions</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\UploadManagement\UploadManagement.csproj">
+      <Project>{a7af4a5a-8c86-4449-80eb-f57f0f7b5e54}</Project>
+      <Name>UploadManagement</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{6ebed656-87ee-4d2c-b564-0a73985494fd}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WpfExtensions\WpfExtensions.csproj">
+      <Project>{87d4e80d-11d1-42cd-8eae-713fa2a41029}</Project>
+      <Name>WpfExtensions</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="configure.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Resource Include="project_images\emptyDatabase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="project_images\fullDatabase.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="project_images\upload.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="configure-3.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Content Include="keyicon.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ResourceLib\AlignTextCenter16.png" />
+    <Resource Include="ResourceLib\AlignTextJustify16.png" />
+    <Resource Include="ResourceLib\AlignTextLeft16.png" />
+    <Resource Include="ResourceLib\AlignTextRight16.png" />
+    <Resource Include="ResourceLib\align_03.png" />
+    <Resource Include="ResourceLib\align_05.png" />
+    <Resource Include="ResourceLib\align_07.png" />
+    <Resource Include="ResourceLib\align_12.png" />
+    <Resource Include="ResourceLib\align_13.png" />
+    <Resource Include="ResourceLib\align_14.png" />
+    <Resource Include="ResourceLib\align_18.png" />
+    <Resource Include="ResourceLib\align_19.png" />
+    <Resource Include="ResourceLib\App.ico" />
+    <Resource Include="ResourceLib\Bold.png" />
+    <Resource Include="ResourceLib\Close.PNG" />
+    <Resource Include="ResourceLib\CommandCollapsed.png" />
+    <Resource Include="ResourceLib\delete.png" />
+    <Resource Include="ResourceLib\diagram.ico" />
+    <Resource Include="ResourceLib\feat.jpg" />
+    <Resource Include="ResourceLib\FontColor.png" />
+    <Resource Include="ResourceLib\glow_03.jpg" />
+    <Resource Include="ResourceLib\glow_06.jpg" />
+    <Resource Include="ResourceLib\glow_08.jpg" />
+    <Resource Include="ResourceLib\glow_10.jpg" />
+    <Resource Include="ResourceLib\glow_12.jpg" />
+    <Resource Include="ResourceLib\glow_13.jpg" />
+    <Resource Include="ResourceLib\glow_14.jpg" />
+    <Resource Include="ResourceLib\glow_21.jpg" />
+    <Resource Include="ResourceLib\glow_22.jpg" />
+    <Resource Include="ResourceLib\glow_23.jpg" />
+    <Resource Include="ResourceLib\glow_24.jpg" />
+    <Resource Include="ResourceLib\glow_26.jpg" />
+    <Resource Include="ResourceLib\glow_28.jpg" />
+    <Resource Include="ResourceLib\glow_35.jpg" />
+    <Resource Include="ResourceLib\glow_36.jpg" />
+    <Resource Include="ResourceLib\glow_37.jpg" />
+    <Resource Include="ResourceLib\glow_38.jpg" />
+    <Resource Include="ResourceLib\glow_39.jpg" />
+    <Resource Include="ResourceLib\glow_40.jpg" />
+    <Resource Include="ResourceLib\glow_47.jpg" />
+    <Resource Include="ResourceLib\glow_48.jpg" />
+    <Resource Include="ResourceLib\glow_49.jpg" />
+    <Resource Include="ResourceLib\glow_50.jpg" />
+    <Resource Include="ResourceLib\glow_51.jpg" />
+    <Resource Include="ResourceLib\glow_52.jpg" />
+    <Resource Include="ResourceLib\Help.jpg" />
+    <Resource Include="ResourceLib\Italic.png" />
+    <Resource Include="ResourceLib\Landscape.png" />
+    <Resource Include="ResourceLib\mail.jpg" />
+    <Resource Include="ResourceLib\Open.PNG" />
+    <Resource Include="ResourceLib\Portatrit.png" />
+    <Resource Include="ResourceLib\Reset.bmp" />
+    <Resource Include="ResourceLib\rulers.png" />
+    <Resource Include="ResourceLib\Save.PNG" />
+    <Resource Include="ResourceLib\shadow_03.png" />
+    <Resource Include="ResourceLib\shadow_06.png" />
+    <Resource Include="ResourceLib\shadow_08.png" />
+    <Resource Include="ResourceLib\shadow_10.png" />
+    <Resource Include="ResourceLib\shadow_15.png" />
+    <Resource Include="ResourceLib\shadow_16.png" />
+    <Resource Include="ResourceLib\shadow_17.png" />
+    <Resource Include="ResourceLib\shadow_21.jpg" />
+    <Resource Include="ResourceLib\shadow_22.png" />
+    <Resource Include="ResourceLib\shadow_23.png" />
+    <Resource Include="ResourceLib\shape-effects.png" />
+    <Resource Include="ResourceLib\shape-fill.png" />
+    <Resource Include="ResourceLib\shape-outline.png" />
+    <Resource Include="ResourceLib\Solistice.png" />
+    <Resource Include="ResourceLib\syncfusion.png" />
+    <Resource Include="ResourceLib\Technic.png" />
+    <Resource Include="ResourceLib\Texture.png" />
+    <Resource Include="ResourceLib\Underline16.png" />
+    <Resource Include="ResourceLib\Untitled-1.png" />
+    <Resource Include="ResourceLib\Untitled-3_03.png" />
+    <Resource Include="ResourceLib\Untitled-3_06.png" />
+    <Resource Include="ResourceLib\Untitled-3_08.png" />
+    <Resource Include="ResourceLib\Untitled-3_10.png" />
+    <Resource Include="ResourceLib\Untitled-3_12.png" />
+    <Resource Include="ResourceLib\Untitled-3_14.png" />
+    <Resource Include="ResourceLib\Untitled-3_16.png" />
+    <Resource Include="ResourceLib\Untitled-3_18.png" />
+    <Resource Include="ResourceLib\Untitled-4_03.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_06.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_12.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_17.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_22.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_25.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_27.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_29.jpg" />
+    <Resource Include="ResourceLib\Untitled-4_31.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_03.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_09.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_13.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_17.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_21.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_25.jpg" />
+    <Resource Include="ResourceLib\Untitled-5_29.jpg" />
+    <Resource Include="ResourceLib\Update.png" />
+    <Resource Include="ResourceLib\Urban.png" />
+    <Resource Include="ResourceLib\Verve.png" />
+    <Resource Include="ResourceLib\Whiteboard Gridline.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="diagram.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="NewFolder1\" />
+    <Folder Include="NewFolder2\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

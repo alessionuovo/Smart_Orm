@@ -1,0 +1,38 @@
+/*!
+ \page Template Template Method Design Pattern
+  
+<summary>This pattern is needed to define skeleton of operation leaving implementation for subclasses  in this project is used 
+for updating files that store database tables, connection etc
+</summary>
+ <h2 style="color:Aqua"> Pattern Benefits for Project </h2>
+
+ Using the pattern
+make it flexible to add another format of files, and then only implement operations that build skeleton of update method
+<h2 style="color:Aqua;"> Description Of Usage In Project </h2>
+ <div style="border:2px solid aqua; font-size:16px;">
+In the project class FileManagement.FileManager serves as AbstractClass  and its operation Update serves as template method. 
+This method  receives EntityElement which contains the data stored in hierarchical format 
+and the method converts it to appropriate type(the generic parameter) using the implementation of functions like CreateRoot and GetAttribute in
+descendant classes. After the convert it adds the converted element to its structure(in xml it is adding XElement to XDocument)
+and saves the updated element to the file.
+Also this class is generic based on single structure element of the file represented in code. Also there is class FileManagement.XmlManager
+that serves as ConcreteClass and extends FileManagement.FileManager for type XElement.
+ 
+
+ 
+ </div>
+ 
+  
+<h2> Diagram </h2>
+
+\image html ClassDiagram3.png
+ 
+ \section templateother Other Patterns in Project
+ \ref Singleton \n
+ \ref Builder \n
+ \ref Facade \n
+ \ref  Command \n
+ \ref Visitor \n
+ \ref Strategy \n
+ 
+*/

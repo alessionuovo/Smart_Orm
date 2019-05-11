@@ -1,0 +1,11 @@
+/*!
+   \page UploadSequenceDetail Upload Class Hierarchy
+    
+	\brief This diagram shows  the heart of upload procedure
+	\detail Some explanation:
+	
+	1. You can see in documentation a much detailed explanation of all.
+	Now the picture:
+	\image html UploadSequenceDetail.jpg
+	
+*/

@@ -1,0 +1,12 @@
+/*!
+   \page ERDManage ERD Management
+    \addtogroup diagrams
+	
+	\brief This diagram shows  the heart of ERD Management
+	\detail Some explanation:
+	
+	1. You can see in documentation a much detailed explanation of all.
+	Now the picture:
+	\image html ERDManage.jpg
+	
+*/

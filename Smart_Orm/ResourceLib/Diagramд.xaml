@@ -1,0 +1,790 @@
+<DiagramPage
+  IsPolyLineEnabled="False"
+  StyleRef="{x:Null}"
+  LineStyleRef="{x:Null}"
+  OrientationRef="TopBottom"
+  HorizontalSpacingref="50"
+  VerticalSpacingref="50"
+  SubTreeSpacingref="150"
+  LayoutTyperef="None"
+  ReferenceCount="15"
+  Background="#00FFFFFF"
+  Margin="0,0,0,0"
+  AllowDrop="True"
+  Focusable="True"
+  av:FocusManager.IsFocusScope="True" xmlns="http://schemas.syncfusion.com/wpf" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:db="clr-namespace:DiagramBuilder_2010;assembly=DiagramBuilder_2010" xmlns:s="clr-namespace:System;assembly=mscorlib">
+  <DiagramPage.Viewstate>
+    <ViewState
+      CurrentZoom="1"
+      ZoomFactor="0.2"
+      BoundaryConstraintsArea="50,50,1030,1190"
+      SizeToContent="False"
+      BoundaryConstraintsEnabled="False"
+      PageBackground="#FFFFFFFF"
+      OffPageBackground="#FFB0C4DE"
+      PageMargin="0,0,0,0" />
+  </DiagramPage.Viewstate>
+  <Node
+    ResizeThisNode="False"
+    ReferenceNo="0"
+    Label="New Client"
+    IsDragConnectionOver="False"
+    Shape="FlowChart_Decision"
+    Level="0"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="205"
+    OffsetY="100"
+    Name="NewClient"
+    Tag="IsFirstLoaded"
+    Width="150"
+    Height="200"
+    ToolTip="FlowChart_Decision"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M0,20L30,0 60,20 30,40z"
+    av:Panel.ZIndex="1">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="75"
+        Top="100"
+        PortNodeReference="0"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="71"
+            Y="96" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+    <db:Window1.ShapeStyle>
+      <db:ShapeStyles
+        Stroke="#FF7D60A0"
+        StrokeThickness="1"
+        IsPreview="False">
+        <db:ShapeStyles.Fill>
+          <av:LinearGradientBrush
+            StartPoint="0.5,0"
+            EndPoint="0.5,1">
+            <av:LinearGradientBrush.GradientStops>
+              <av:GradientStop
+                Color="#FFEFE9F9"
+                Offset="0.006" />
+              <av:GradientStop
+                Color="#FFCAB6E8"
+                Offset="0.994" />
+            </av:LinearGradientBrush.GradientStops>
+          </av:LinearGradientBrush>
+        </db:ShapeStyles.Fill>
+      </db:ShapeStyles>
+    </db:Window1.ShapeStyle>
+  </Node>
+  <Node
+    ResizeThisNode="False"
+    ReferenceNo="1"
+    Label="Register"
+    IsDragConnectionOver="False"
+    Shape="Rectangle"
+    Level="1"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="435"
+    OffsetY="100"
+    Name="Register"
+    Tag="IsFirstLoaded"
+    Width="150"
+    Height="300"
+    ToolTip="Rectangle"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M80,80L160,80 160,120 80,120z"
+    av:Panel.ZIndex="2">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="75"
+        Top="150"
+        PortNodeReference="1"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="71"
+            Y="146" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+    <db:Window1.ShapeStyle>
+      <db:ShapeStyles
+        Stroke="#FFF6A05A"
+        StrokeThickness="1"
+        IsPreview="False">
+        <db:ShapeStyles.Fill>
+          <av:LinearGradientBrush
+            StartPoint="0.5,0"
+            EndPoint="0.5,1">
+            <av:LinearGradientBrush.GradientStops>
+              <av:GradientStop
+                Color="#FFFFEAD9"
+                Offset="0.011" />
+              <av:GradientStop
+                Color="#FFFFBF87"
+                Offset="0.994" />
+            </av:LinearGradientBrush.GradientStops>
+          </av:LinearGradientBrush>
+        </db:ShapeStyles.Fill>
+      </db:ShapeStyles>
+    </db:Window1.ShapeStyle>
+  </Node>
+  <Node
+    ResizeThisNode="False"
+    ReferenceNo="2"
+    Label="Client Account Info"
+    IsDragConnectionOver="False"
+    Shape="Rectangle"
+    Level="3"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="650"
+    OffsetY="100"
+    Name="ClientAccountInfo"
+    Tag="IsFirstLoaded"
+    Width="150"
+    Height="400"
+    ToolTip="Rectangle"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M80,80L160,80 160,120 80,120z"
+    av:Panel.ZIndex="3">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="75"
+        Top="200"
+        PortNodeReference="2"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="71"
+            Y="196" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+    <db:Window1.ShapeStyle>
+      <db:ShapeStyles
+        Stroke="#FF46AAC5"
+        StrokeThickness="1"
+        IsPreview="False">
+        <db:ShapeStyles.Fill>
+          <av:LinearGradientBrush
+            StartPoint="0.5,0"
+            EndPoint="0.5,1">
+            <av:LinearGradientBrush.GradientStops>
+              <av:GradientStop
+                Color="#FFE2F8FF"
+                Offset="0.017" />
+              <av:GradientStop
+                Color="#FF9EEAFF"
+                Offset="1" />
+            </av:LinearGradientBrush.GradientStops>
+          </av:LinearGradientBrush>
+        </db:ShapeStyles.Fill>
+      </db:ShapeStyles>
+    </db:Window1.ShapeStyle>
+  </Node>
+  <Node
+    ResizeThisNode="False"
+    ReferenceNo="3"
+    Label="End"
+    IsDragConnectionOver="False"
+    Shape="Ellipse"
+    Level="4"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="850"
+    OffsetY="200"
+    Name="End"
+    Tag="IsFirstLoaded"
+    Width="100"
+    Height="60"
+    ToolTip="Ellipse"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M305.772,123.75C305.772,191.819095416645 237.434535075173,247 153.136,247 68.837464924827,247 0.5,191.819095416645 0.5,123.75 0.5,55.6809045833547 68.837464924827,0.5 153.136,0.5 237.434535075173,0.5 305.772,55.6809045833547 305.772,123.75z"
+    av:Panel.ZIndex="4">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="50"
+        Top="30"
+        PortNodeReference="3"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="46"
+            Y="26" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+    <db:Window1.ShapeStyle>
+      <db:ShapeStyles
+        Stroke="#FF000000"
+        StrokeThickness="1"
+        IsPreview="False">
+        <db:ShapeStyles.Fill>
+          <av:LinearGradientBrush
+            StartPoint="0.5,0"
+            EndPoint="0.5,1">
+            <av:LinearGradientBrush.GradientStops>
+              <av:GradientStop
+                Color="#FFECECEC"
+                Offset="0.024" />
+              <av:GradientStop
+                Color="#FFBCBCBC"
+                Offset="0.994" />
+              <av:GradientStop
+                Color="#FF000000"
+                Offset="1" />
+            </av:LinearGradientBrush.GradientStops>
+          </av:LinearGradientBrush>
+        </db:ShapeStyles.Fill>
+      </db:ShapeStyles>
+    </db:Window1.ShapeStyle>
+  </Node>
+  <Node
+    ResizeThisNode="False"
+    ReferenceNo="4"
+    Label="Data Entry"
+    IsDragConnectionOver="False"
+    Shape="FlowChart_Card"
+    Level="3"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="180"
+    OffsetY="300"
+    Name="DataEntry"
+    Tag="IsFirstLoaded"
+    Width="200"
+    Height="60"
+    ToolTip="FlowChart_Card"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M0,10L10,0 60,0 60,40 0,40z"
+    av:Panel.ZIndex="5">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="100"
+        Top="30"
+        PortNodeReference="4"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="96"
+            Y="26" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+    <db:Window1.ShapeStyle>
+      <db:ShapeStyles
+        Stroke="#FF4A7EBB"
+        StrokeThickness="1"
+        IsPreview="False">
+        <db:ShapeStyles.Fill>
+          <av:LinearGradientBrush
+            StartPoint="0.5,0"
+            EndPoint="0.5,1">
+            <av:LinearGradientBrush.GradientStops>
+              <av:GradientStop
+                Color="#FFE4EDFF"
+                Offset="0.006" />
+              <av:GradientStop
+                Color="#FFA4C4FF"
+                Offset="0.988" />
+              <av:GradientStop
+                Color="#FF4A7EBB"
+                Offset="0.994" />
+              <av:GradientStop
+                Color="#FFAAAAAA"
+                Offset="1" />
+            </av:LinearGradientBrush.GradientStops>
+          </av:LinearGradientBrush>
+        </db:ShapeStyles.Fill>
+      </db:ShapeStyles>
+    </db:Window1.ShapeStyle>
+  </Node>
+  <Node
+    ResizeThisNode="False"
+    ReferenceNo="5"
+    Label="Review"
+    IsDragConnectionOver="False"
+    Shape="FlowChart_PaperTape"
+    Level="2"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="675"
+    OffsetY="300"
+    Name="Review"
+    Tag="IsFirstLoaded"
+    Width="100"
+    Height="60"
+    ToolTip="FlowChart_PaperTape"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M0,3C30,-7,30,13,60,3L60,37C30,47,30,27,0,37z"
+    av:Panel.ZIndex="6">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="50"
+        Top="30"
+        PortNodeReference="5"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="46"
+            Y="26" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+    <db:Window1.ShapeStyle>
+      <db:ShapeStyles
+        Stroke="#FF98B954"
+        StrokeThickness="1"
+        IsPreview="False">
+        <db:ShapeStyles.Fill>
+          <av:LinearGradientBrush
+            StartPoint="0.5,0"
+            EndPoint="0.5,1">
+            <av:LinearGradientBrush.GradientStops>
+              <av:GradientStop
+                Color="#FFF4FFE5"
+                Offset="0.012" />
+              <av:GradientStop
+                Color="#FFDBFDA8"
+                Offset="1" />
+            </av:LinearGradientBrush.GradientStops>
+          </av:LinearGradientBrush>
+        </db:ShapeStyles.Fill>
+      </db:ShapeStyles>
+    </db:Window1.ShapeStyle>
+  </Node>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="585,267.441860465116"
+    StartPointPosition="650,282.558139534884"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="650,282.558135986328"
+    HeadDecoratorAngle="13.091887088557352"
+    TailDecoratorPosition="585,267.441864013672"
+    TailDecoratorAngle="-166.90811291144266"
+    HeadDecoratorShape="None"
+    TailDecoratorShape="None"
+    LabelAngle="180"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="2"
+    TailNodeReferenceNo="1"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="6"
+    av:Panel.ZIndex="7">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M650,282.558139534884L585,267.441860465116" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="435,233.695652173913"
+    StartPointPosition="355,216.304347826087"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="355,216.304351806641"
+    HeadDecoratorAngle="-167.73523225721317"
+    TailDecoratorPosition="435,233.695648193359"
+    TailDecoratorAngle="12.264767742786836"
+    HeadDecoratorShape="Circle"
+    TailDecoratorShape="Circle"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="0"
+    TailNodeReferenceNo="1"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="7"
+    av:Panel.ZIndex="8">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M355,216.304347826087L435,233.695652173913" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="725,300"
+    StartPointPosition="725,300"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="725,300"
+    HeadDecoratorAngle="-90"
+    TailDecoratorPosition="725,301.790283203125"
+    TailDecoratorAngle="90"
+    HeadDecoratorShape="Arrow"
+    TailDecoratorShape="Arrow"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="2"
+    TailNodeReferenceNo="5"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="8"
+    av:Panel.ZIndex="9">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M725,300L725,300" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="280,300"
+    StartPointPosition="280,300"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="280,302.669891357422"
+    HeadDecoratorAngle="90"
+    TailDecoratorPosition="280,297"
+    TailDecoratorAngle="-90"
+    HeadDecoratorShape="Diamond"
+    TailDecoratorShape="Diamond"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="0"
+    TailNodeReferenceNo="4"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="9"
+    av:Panel.ZIndex="10">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M280,300L280,300" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="675,330"
+    StartPointPosition="380,330"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="380,330"
+    HeadDecoratorAngle="-180"
+    TailDecoratorPosition="675,330"
+    TailDecoratorAngle="0"
+    HeadDecoratorShape="None"
+    TailDecoratorShape="Diamond"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="4"
+    TailNodeReferenceNo="5"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="10"
+    av:Panel.ZIndex="11">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M380,330L675,330" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="850,250"
+    StartPointPosition="800,270"
+    ConnectorType="Straight"
+    HeadDecoratorPosition="800,270"
+    HeadDecoratorAngle="158.19859051364819"
+    TailDecoratorPosition="850,250"
+    TailDecoratorAngle="-21.801409486351812"
+    HeadDecoratorShape="None"
+    TailDecoratorShape="Arrow"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;/&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="2"
+    TailNodeReferenceNo="3"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="11"
+    av:Panel.ZIndex="12">
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M800,270L850,250" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+  <Node
+    GripperVisibility="Collapsed"
+    ResizeThisNode="False"
+    ReferenceNo="12"
+    IsDragConnectionOver="False"
+    Shape="CustomPath"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="95.5"
+    OffsetY="478.25"
+    Content="{x:Null}"
+    Name="Nodeb989201e15e3439886385710c5bc7e0c"
+    Width="50"
+    Height="50"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M10,0L60,0 50,40 0,40z"
+    av:Panel.ZIndex="13">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="12"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0"
+        IsHitTestVisible="True">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="21"
+            Y="21" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+  </Node>
+  <Node
+    GripperVisibility="Collapsed"
+    ResizeThisNode="False"
+    ReferenceNo="13"
+    IsDragConnectionOver="False"
+    Shape="CustomPath"
+    OldZIndex="0"
+    NewZIndex="0"
+    OffsetX="635.5"
+    OffsetY="576.25"
+    Content="{x:Null}"
+    Name="Node2b57e2271f334aff9ca5a3f83b951283"
+    Width="50"
+    Height="50"
+    IsManipulationEnabled="True"
+    db:Window1.Data="M5,0L60,0A40,40,0,0,0,60,40L5,40A40,40,0,0,1,5,0z"
+    av:Panel.ZIndex="14">
+    <Node.Ports>
+      <ConnectionPort
+        PortShape="Circle"
+        Left="25"
+        Top="25"
+        PortNodeReference="13"
+        PortReferenceNo="1"
+        CenterPortReferenceNo="0"
+        IsHitTestVisible="True">
+        <ConnectionPort.PortStyle>
+          <PortStyle />
+        </ConnectionPort.PortStyle>
+        <ConnectionPort.RenderTransform>
+          <av:TranslateTransform
+            X="21"
+            Y="21" />
+        </ConnectionPort.RenderTransform>
+      </ConnectionPort>
+    </Node.Ports>
+    <Node.RenderTransform>
+      <av:RotateTransform />
+    </Node.RenderTransform>
+  </Node>
+  <LineConnector
+    MinimumSegementLength="0"
+    DecoratorAdornerStyle="{x:Null}"
+    OldZIndex="0"
+    NewZIndex="0"
+    EndPointPosition="547.5,537.25"
+    StartPointPosition="497.5,487.25"
+    ConnectorType="Arc"
+    HeadDecoratorPosition="120.5,475.25"
+    HeadDecoratorAngle="118.0014160834444"
+    TailDecoratorPosition="660.5,573.25"
+    TailDecoratorAngle="82.570791832824256"
+    HeadDecoratorShape="None"
+    TailDecoratorShape="Arrow"
+    LabelAngle="0"
+    SerializationData="&lt;ConnectorStatePersistence xmlns=&quot;http://schemas.datacontract.org/2004/07/Syncfusion.Windows.Diagram&quot; xmlns:i=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&gt;&lt;IntermediatePoints xmlns:a=&quot;http://schemas.datacontract.org/2004/07/System.Windows&quot;&gt;&lt;a:Point&gt;&lt;a:_x&gt;0&lt;/a:_x&gt;&lt;a:_y&gt;0&lt;/a:_y&gt;&lt;/a:Point&gt;&lt;a:Point&gt;&lt;a:_x&gt;0&lt;/a:_x&gt;&lt;a:_y&gt;0&lt;/a:_y&gt;&lt;/a:Point&gt;&lt;/IntermediatePoints&gt;&lt;/ConnectorStatePersistence&gt;"
+    HeadNodeReferenceNo="12"
+    TailNodeReferenceNo="13"
+    HeadPortReferenceNo="0"
+    TailPortReferenceNo="0"
+    ReferenceNo="14"
+    Cursor="Arrow"
+    av:Panel.ZIndex="15">
+    <LineConnector.VertexStyle>
+      <av:Style
+        TargetType="av:Thumb">
+        <av:Style.Resources>
+          <av:ResourceDictionary />
+        </av:Style.Resources>
+        <av:Setter
+          Property="av:FrameworkElement.Width">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:FrameworkElement.Height">
+          <av:Setter.Value>
+            <s:Double>7</s:Double>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.SnapsToDevicePixels">
+          <av:Setter.Value>
+            <s:Boolean>True</s:Boolean>
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:UIElement.RenderTransform">
+          <av:Setter.Value>
+            <av:TranslateTransform
+              X="-3"
+              Y="-3" />
+          </av:Setter.Value>
+        </av:Setter>
+        <av:Setter
+          Property="av:Control.Template">
+          <av:Setter.Value>
+            <av:ControlTemplate
+              TargetType="av:Thumb">
+              <av:Rectangle
+                RadiusX="0"
+                RadiusY="0"
+                Fill="#AADCDCDC"
+                Stroke="#FF1E90FF"
+                StrokeThickness="1"
+                RenderTransformOrigin="0.5,0.5" />
+            </av:ControlTemplate>
+          </av:Setter.Value>
+        </av:Setter>
+      </av:Style>
+    </LineConnector.VertexStyle>
+    <LineConnector.ConnectorPathGeometry>
+      <av:PathGeometry
+        Figures="M120.5,475.25A274.410276775488,50,10.2861711827543,0,1,660.5,573.25" />
+    </LineConnector.ConnectorPathGeometry>
+    <LineConnector.LineStyle>
+      <LineStyle />
+    </LineConnector.LineStyle>
+    <LineConnector.HeadDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.HeadDecoratorStyle>
+    <LineConnector.TailDecoratorStyle>
+      <DecoratorStyle />
+    </LineConnector.TailDecoratorStyle>
+  </LineConnector>
+</DiagramPage>

@@ -1,0 +1,22 @@
+/*!
+  
+  \defgroup Pl Presentation Layer
+  @{
+<summary>This layer is responsible for creating and displaying forms it gets needed services from Business Logic Layer</summary>
+  \section Principles
+ <list type="bullet">
+   <item>
+     User Interface is comfortable and friendly for use.
+   </item>
+   <item>
+    All the forms extend BasicForm.
+	So to set something to all forms you need to set it to BasicForm
+	</item>
+    <item>
+   Uses common classes to specific types of forms.
+   </item>
+    
+ </list>
+ \ref group_pl "Presentation Layer"
+	@}
+*/

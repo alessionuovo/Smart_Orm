@@ -1,0 +1,37 @@
+/*!
+ \page Singleton Singleton Design Pattern
+  
+<summary>This pattern is needed to allow creating final number of
+instances of a class. Using this pattern allows to avoid errors for classes with one instance required
+</summary>
+ \section SingletonExamples Singleton Examples
+ <list type="number">
+   <item>
+      FileManagement.DbDefinitionsManager-This is class that manages and reveals definitions of structure of file
+	 that store database objects.
+   </item>
+   <item>
+      Utilities.Definitions.DbValidationDefinition-This is class that stores definitions of structure of file
+	 that store database objects. it is implemented as Singleton to allow inheritance, so users can 
+	 extend and their own definitions
+   </item>
+    <item>
+   Utilities.Definitions.SystemDefinitionsManager-Manages all system configuration. Implemented as Singleton
+	because required one instance only and it is open to extension, because configuration tends to grow over time.
+   </item>
+   
+ </list>
+ 
+ \n \n
+ <h2> Diagram </h2>
+
+\image html SingletonDiagram.jpg
+ \section singletonother Other Patterns in Project
+ \ref  Builder  \n
+ \ref Template \n
+ \ref Facade \n
+ \ref Command \n
+ \ref Visitor \n
+ \ref Strategy \n
+	
+*/

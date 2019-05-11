@@ -1,0 +1,47 @@
+/*!
+  \page intro Introduction
+  \section Project_structure Project structure
+   System is based on 3-Tier Model in
+   which system is divided to 3 layers:
+   <list type="number">
+   
+    <item>
+   Data Access Layer
+   </item>
+   <item>
+   Business Logic Layer
+   </item>
+   <item>
+    Presentation Layer
+   </item>
+   </list>
+   Each layer communicates with above layer via well-defined interface
+   , that is almost fixed.
+   So changes in implementation of a layer doesn't need to have
+   a change of interface between them
+   and if the change in needed it is minor.
+   \section capabilities Capabilities
+   <list type="number">
+   
+    <item>
+        
+        The system able to upload xml files that contains database definitions(tables and connections)
+    </item>
+	 <item>
+        
+        The system able to validate the structure of the file supplied
+    </item>
+	<item>
+        
+        The system allows you to build erd diagram for your database system, and update it
+    </item>
+	<item>
+        
+        The system allows you to generate classes that manage your database system in comfortable way
+    </item>
+	</list>
+	
+      Now you can proceed to the <a 
+href="modules.html">Modules</a>
+	
+*/

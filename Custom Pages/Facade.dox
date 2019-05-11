@@ -1,0 +1,34 @@
+/*!
+ \page Facade Facade Design Pattern
+  
+<summary>This pattern is needed to create unified interface to subsystem \n
+and in this project is used to create unified interface to system configuration. 
+</summary>
+ <h2 style="color:Aqua"> Pattern Benefits for Project </h2>
+
+ Using the pattern
+helps to organize work with system definitions and is flexible for adding new definitions.
+<h2 style="color:Aqua;"> Description Of Usage In Project </h2>
+ <div style="border:2px solid aqua; font-size:16px;">
+In the project class Utilities.Definitions.SystemDefinitionsManager serves as Facade  that provides
+interface to system configuration. It is done via three classes that each of them serve as SubSystem: Utilities.Definitions.FileDefinition, Utilities.Definitions.DirectoriesDefinition, Utilities.Definitions.DbValidationDefinition  \n
+ and they contain definitions of files allowed to upload, directories in which to store them and allowed structure of uploaded files. \n
+ 
+
+ 
+ </div>
+ 
+  
+<h2> Diagram </h2>
+
+\image html FacadeDiagram.jpg
+ 
+ \section facadeother Other Patterns in Project
+ \ref Singleton \n
+ \ref Builder \n
+ \ref Command \n
+ \ref  Template Method \n
+ \ref Visitor \n
+ \ref Strategy \n
+ 
+*/

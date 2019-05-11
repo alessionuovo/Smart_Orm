@@ -1,0 +1,6 @@
+<Table Name="Second">
+	<Properties>
+		<Property Name="q" Type="int"/>
+		<Property Name="t" Type="string"/>
+	</Properties>
+</Table>

@@ -1,0 +1,12 @@
+/*!
+   \page ChooseForm Upload Diagram
+    \ingroup diagrams
+	@{
+	\brief This diagram shows how upload files that contain description of database occurs
+	\detail Some explanation:
+	
+	1. You can see in documentation a much detailed explanation of all.
+	Now the picture:
+	\image html UploadDiagram.jpg
+	@}
+*/

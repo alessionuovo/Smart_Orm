@@ -1,0 +1,113 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Smart_Orm.DiagramResources"
+                    xmlns:Geometry3d="clr-namespace:System.Windows.Media.Media3D.Converters;assembly=PresentationCore"
+    >
+    
+        <Image x:Key="ConnectionShapeImage" >
+        <Image.Source>
+            <DrawingImage>
+                <DrawingImage.Drawing>
+                    <GeometryDrawing  >
+                        <GeometryDrawing.Pen>
+                            <Pen  Thickness="1"   >
+                                <Pen.Brush>
+                                    <SolidColorBrush  Color="#FF191970" ></SolidColorBrush>
+                                </Pen.Brush>
+                            </Pen>
+                        </GeometryDrawing.Pen>
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1" Opacity="0.25">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FFFAFBE9" ></GradientStop>
+                                        <GradientStop Color="#FF6495ED"></GradientStop>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                                
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                        <GeometryDrawing.Geometry>
+
+                            <RectangleGeometry Rect="0,5,10,80">
+                                <RectangleGeometry.Transform>
+                                    <RotateTransform Angle="-45"/>
+                                </RectangleGeometry.Transform>
+                            </RectangleGeometry>
+                            </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingImage.Drawing>
+            </DrawingImage>
+        </Image.Source>
+        
+    </Image>
+    
+    <Image x:Key="EntityShapeImage">
+        <Image.Source>
+            <DrawingImage>
+                <DrawingImage.Drawing>
+                    <GeometryDrawing >
+                        <GeometryDrawing.Brush>
+                            <LinearGradientBrush Opacity="0.25">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStopCollection>
+                                        <GradientStop Color="#FFFAFBE9"></GradientStop>
+                                        <GradientStop Color="#FF6495ED"></GradientStop>
+                                    </GradientStopCollection>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </GeometryDrawing.Brush>
+                        <GeometryDrawing.Pen>
+                            <Pen   Thickness="1">
+                                <Pen.Brush>
+                                    <SolidColorBrush Opacity="1" Color="#FF191970" ></SolidColorBrush> 
+                                </Pen.Brush>  
+                            </Pen>
+                        </GeometryDrawing.Pen>
+                        <GeometryDrawing.Geometry>
+                            <RectangleGeometry Rect="0,0,100,100"/>
+                        </GeometryDrawing.Geometry>
+                    </GeometryDrawing>
+                </DrawingImage.Drawing>
+            </DrawingImage>
+        </Image.Source>
+    </Image>
+    <Path x:Key="EntityShape"  Data="M100,75L150,170L100,170L100,75L150,75L150,170z" Stroke="Black" Stretch="Fill" StrokeThickness="0" Fill="Blue">
+      <!--  <Path.Data>
+            <CombinedGeometry>
+                <CombinedGeometry.Geometry1>
+                    <RectangleGeometry Rect="100,75,150,170">
+                    </RectangleGeometry> </CombinedGeometry.Geometry1>
+                <CombinedGeometry.Geometry2>
+                    <LineGeometry StartPoint="100,75" EndPoint="150,170">
+                    </LineGeometry>
+                </CombinedGeometry.Geometry2>
+            </CombinedGeometry>
+        </Path.Data>-->
+    </Path>
+    <Path x:Key="RailLineShape"  Stroke="Blue" Stretch="Fill" StrokeThickness="100" Fill="Blue">
+        <Path.Data>
+        <LineGeometry StartPoint="0,0" EndPoint="30,40" />
+
+        </Path.Data>
+    </Path>
+    <Path x:Key="RailLineShape2" Data="M240,75 L320,155z"  Stretch="Fill" StrokeThickness="2" Fill="Blue"/>
+    <Path x:Key="ArrowLineShape" Stroke="Blue" Stretch="Fill" StrokeThickness="2" Fill="Blue"  >
+        <Path.Data>
+
+            <PathGeometry>
+                <PathFigure StartPoint="270,75">
+                    <LineSegment Point="300,105"/>
+                </PathFigure>
+                <PathFigure StartPoint="270,115" IsClosed="True">
+                    <LineSegment Point="330,95"/>
+                    <LineSegment Point="300,135"/>
+
+                </PathFigure>
+            </PathGeometry>
+
+
+        </Path.Data>
+    </Path>
+    
+</ResourceDictionary>

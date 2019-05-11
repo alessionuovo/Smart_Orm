@@ -1,0 +1,40 @@
+/*!
+ \page Strategy Strategy Design Pattern
+  
+<summary>This pattern is needed to define family of algorithms allows choosing one of them 
+in this project it serves for managing files that represent database objects.
+</summary>
+ <h2 style="color:Aqua"> Pattern Benefits for Project </h2>
+
+ Using the pattern
+make it flexible to add another format of files, and then only add manager of format 
+that implements needed methods;
+
+<h2 style="color:Aqua;"> Description Of Usage In Project </h2>
+ <div style="border:2px solid aqua; font-size:16px;">
+In the project class FileManagement.IEntity serves as basic of objects that serve as Context it defines only Validate method for validation of file that represents database object.
+ class FileManagement.Entity implements this interface, and represent object that is not known if it is Table or Connection or other and serves as Context.
+ Also interface IConcreteEntity that is generic on database object type extends it.
+ MoreOver, TableEntity and ConnectionEntity that extend IConcreteEntity for Table and for Connection and represents corresponding database object type serve as Context also.
+ Finally, class FileManagement.FileManager is the abstract algorithm class and class FileManagement.XmlManager that manages xml files io operations 
+ 
+ 
+
+ 
+ </div>
+ 
+  
+<h2> Diagram </h2>
+
+\image html ClassDiagram2.png
+ 
+ \section strategyother Other Patterns in Project
+ \ref Singleton \n
+ \ref Builder \n
+ \ref Template \n
+ \ref Facade \n
+ \ref  Command \n
+ \ref Visitor \n
+ 
+ 
+*/

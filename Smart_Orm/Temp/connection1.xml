@@ -1,0 +1,2 @@
+<Connection Name="First" FirstTable="First" SecondTable="Second" FirstRelation="One" SecondRelation="Many">
+</Connection>

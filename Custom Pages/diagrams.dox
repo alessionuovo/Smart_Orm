@@ -1,0 +1,10 @@
+/*!
+   \page Diagrams  System Diagrams
+    
+	 \brief This section shows graphical structure of the system using uml diagrams. \n
+	 The following diagrams are available:
+	 \subpage ERDManage \n
+	 \subpage MainForm \n
+	 \subpage UploadSequenceDetail \n
+	 \subpage UploadSequence \n
+*/

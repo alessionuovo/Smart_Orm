@@ -1,0 +1,15 @@
+/*!
+  \page MainForm Diagram Management and Code Generation
+    
+	\brief This diagram shows how main window communicates with other classes to achieve
+	ERD Diagram creation and modification and Code Generation.
+	\detail Some explanation:
+	1. Database representation- Class is Bound(wpf) to Diagram Control
+	2. DbDefinitionsManager is not the lowest item in hierarchy, in next diagram it is shown
+	   (not shown because of place)
+	3. IModuleBuilder also has lower elements in hierarchy here there is no place to show.
+	4. You can see in documentation a much detailed explanation of all.
+	Now the picture:
+	\image html MainFormDiagram.jpg
+	
+*/
